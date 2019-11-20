@@ -13,30 +13,32 @@ import java.util.UUID;
  *
  * @author Tjelle Lenovo V110
  */
-public class BuildingManagementSystem{
+public class BuildingManagementSystem {
 
-    private List<Building> buildings;
+    private ArrayList<Building> buildings;
 
-    public List<Building> getBuildings() {
+    public ArrayList<Building> getBuildings() {
         return buildings;
     }
-    public BuildingManagementSystem(){
+
+    public BuildingManagementSystem() {
         this.buildings = new ArrayList<>();
     }
-    
-    
+
     public UUID addBuildings(String name) {
         Building temp = new Building(name);
         buildings.add(temp);
         buildings.add(temp);
         return temp.getId();
     }
-    
-    public void removeBuilding(UUID id){
-        for(int i = 0; i<buildings.size(); i++){
-            if()
+
+    public void removeBuilding(UUID id) {
+        List<Building> toRemove = new ArrayList<>();
+        for (int i = 0; i < buildings.size(); i++) {
+            if (buildings.get(i).getId() == id) {
+                toRemove.add(buildings.get(i));
+            }
         }
+        buildings.removeAll(toRemove);
     }
-
 }
-
