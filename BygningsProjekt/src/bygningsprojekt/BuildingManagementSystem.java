@@ -5,6 +5,7 @@
  */
 package bygningsprojekt;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,13 +20,22 @@ public class BuildingManagementSystem{
     public List<Building> getBuildings() {
         return buildings;
     }
-
-    public UUID addBuildings(String name) {
-        this.buildings = buildings;
-    
+    public BuildingManagementSystem(){
+        this.buildings = new ArrayList<>();
     }
+    
+    
+    public UUID addBuildings(String name) {
+        Building temp = new Building(name);
+        buildings.add(temp);
+        buildings.add(temp);
+        return temp.getId();
+    }
+    
     public void removeBuilding(UUID id){
-        
+        for(int i = 0; i<buildings.size(); i++){
+            if()
+        }
     }
 
 }

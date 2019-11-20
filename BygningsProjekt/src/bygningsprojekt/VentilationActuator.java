@@ -12,7 +12,7 @@ package bygningsprojekt;
 public class VentilationActuator extends Actuator {
     @Override
     public void setValue(double value){
-        
+    
     }
     @Override
     public void toString(){   

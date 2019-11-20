@@ -12,16 +12,27 @@ import java.util.UUID;
  *
  * @author Tjelle Lenovo V110
  */
-public class Buliding extends Unit{
-
+public class Building extends Unit{
+    private UUID id;
+    
     private List<Sensor> sensors;
 
     private List<Actuator> actuators;
+    private String name;
+    
+    public Building(String name){
+        this.name = name;
+        this.id = UUID.randomUUID();
+    }
+    
+    public UUID getId(){
+        return id;
+    }
 
     public List<Actuator> getActuators() {
         return actuators;
     }
-
+    
     public List<Sensor> getSensors() {
         return sensors;
     }
