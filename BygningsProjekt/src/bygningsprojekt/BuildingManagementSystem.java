@@ -12,7 +12,7 @@ import java.util.UUID;
  *
  * @author Tjelle Lenovo V110
  */
-public class BuildingManagementSystem {
+public class BuildingManagementSystem{
 
     private List<Building> buildings;
 

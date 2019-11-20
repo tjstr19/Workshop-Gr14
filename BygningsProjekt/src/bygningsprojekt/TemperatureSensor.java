@@ -9,6 +9,14 @@ package bygningsprojekt;
  *
  * @author Bruger
  */
-public class TemperatureSensor {
-    
+public class TemperatureSensor extends Sensor{
+    @Override
+    public double getValue() {
+        return value;
+    }
+
+    @Override
+    public void toString() {
+
+    }
 }

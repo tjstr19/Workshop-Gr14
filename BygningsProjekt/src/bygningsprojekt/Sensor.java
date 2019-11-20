@@ -9,6 +9,8 @@ package bygningsprojekt;
  *
  * @author Bruger
  */
-public class Sensor {
-    
+public class Sensor extends Unit {
+    public double getValue(){
+        
+    }
 }
