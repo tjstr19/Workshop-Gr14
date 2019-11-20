@@ -5,17 +5,30 @@
  */
 package bygningsprojekt;
 
+import java.util.List;
+
 /**
  *
  * @author Tjelle Lenovo V110
  */
-public class BygningsProjekt {
+public class BuildingManagementSystem {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        private List<Building> buildings;
+
+    public List<Building> getBuildings() {
+        return buildings;
     }
-    
+
+    public UUID addBuildings(String name buildings) {
+        this.buildings = buildings;
+    }
+    public void removeBuilding(UUID id){
+        
+    }
+
 }
+
