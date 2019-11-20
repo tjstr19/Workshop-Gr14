@@ -12,7 +12,7 @@ import java.util.UUID;
  *
  * @author Tjelle Lenovo V110
  */
-public class Buliding {
+public class Buliding extends Unit{
 
     private List<Sensor> sensors;
 

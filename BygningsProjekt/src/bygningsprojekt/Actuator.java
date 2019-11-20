@@ -7,17 +7,16 @@ package bygningsprojekt;
 
 /**
  *
- * @author Bruger
+ * @author Tjelle Lenovo V110
  */
-public class Co2Sensor extends Sensor {
+public class Actuator extends Unit {
+    private double Value;
 
-    @Override
     public double getValue() {
-        return value;
+        return Value;
     }
 
-    @Override
-    public void toString() {
-
+    public void setValue(double Value) {
+        this.Value = Value;
     }
 }
